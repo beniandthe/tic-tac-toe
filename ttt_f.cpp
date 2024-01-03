@@ -192,7 +192,7 @@ void invalid_turn() {
 
 // take user input and push_back to respective player_move vectors. Update total turns. Update board after each turn. 
 void playerturn() {
-    while (!game_over() || total_turns < 9) 
+    while (!game_over() && total_turns < 9) 
     {
         // player 1 move input. Check if its valid through loop.
         player1turn = true;
@@ -230,4 +230,6 @@ void playerturn() {
         return;
         }
     }
+
+    return;
 }
